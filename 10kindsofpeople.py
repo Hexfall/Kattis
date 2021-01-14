@@ -80,7 +80,6 @@ y, x = [int(i) for i in input().split()]
 graph = [input() for i in range(y)]
 # Create QuickUnion set.
 mapSet = QuickUnion(graph)
-print(str(mapSet))
 
 for i in range(int(input())):
     y1, x1, y2, x2 = [int(i) - 1 for i in input().split()]
