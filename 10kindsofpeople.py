@@ -17,7 +17,7 @@ class QuickUnion:
         self.__setup(graph)
 
     def get_index(self, y, x):
-        return self.height * y + x
+        return self.width * y + x
 
     def __setup(self, graph):
         # Give nodes correct type and connect them accordingly.
@@ -69,7 +69,7 @@ class QuickUnion:
     def __str__(self):
         rows = []
         for i in range(self.height):
-            rows.append("".join([str(self.find(j)) for j in range(i, i + self.width)]))
+            rows.append("".join([str(self.find(j)) for j in range(i * self.width, (i + 1) * self.width)]))
         return "\n".join(rows)
 
     def __repr__(self):
