@@ -1,3 +1,9 @@
+.idea/
+
 .kattisrc
 submit.py
-a.out
+*.out
+*.exe
+*.obj
+*.iml
+*.xml
